@@ -82,7 +82,7 @@ const Home = () => {
       <Navbar />
       <div style={styles.content}>
         <h1 style={styles.header}>
-          📚 Discover {selectedGenre ? selectedGenre : "Genres"} Reads
+           Discover {selectedGenre ? selectedGenre : "Genres"} Reads
         </h1>
 
         <div style={styles.genreSelector}>
