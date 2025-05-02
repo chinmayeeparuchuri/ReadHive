@@ -40,6 +40,7 @@ const styles = {
     fontSize: "16px",
     cursor: "pointer",
     marginTop: "20px",
+    margin: "0 10px"
   },
   progressBar: {
     width: "100%",
