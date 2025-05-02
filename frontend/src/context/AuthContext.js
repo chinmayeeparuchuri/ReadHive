@@ -1,10 +1,10 @@
 import axios from "axios";
 import React, { createContext, useState, useContext } from "react";
 
-// ✅ Create the context
+// Create the context
 export const AuthContext = createContext();
 
-// ✅ Create and export the provider
+// Create and export the provider
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [errorMessage, setErrorMessage] = useState(""); // Error message state
@@ -99,5 +99,5 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-// ✅ Custom hook to access auth context
+// Custom hook to access auth context
 export const useAuth = () => useContext(AuthContext);
