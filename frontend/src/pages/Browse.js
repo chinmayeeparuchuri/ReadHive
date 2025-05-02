@@ -57,7 +57,7 @@ const Browse = () => {
     <div style={styles.container}>
       <Navbar />
       <div style={styles.content}>
-        <h1 style={styles.header}>📚 Browse Books</h1>
+        <h1 style={styles.header}>🍯 Browse Books</h1>
 
         {/* Filter Controls */}
         <div style={styles.filterControls}>
