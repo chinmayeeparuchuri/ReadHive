@@ -13,13 +13,13 @@ const app = express();
 // Middleware
 app.use(express.json());
 const allowedOrigins = [
-  "http://localhost:3000",                                // local dev
-  "https://read-hive-3e1b.vercel.app"                     // your Vercel frontend URL
+  "http://localhost:3000",
+  "https://read-hive-whug.vercel.app",
 ];
 
 app.use(cors({
   origin: allowedOrigins,
-  credentials: true
+  credentials: true,
 }));
 
 
