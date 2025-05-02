@@ -3,6 +3,10 @@ import axios from "axios";
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.json({ message: "Books route is working" });
+});
+
 // Route to search for books
 router.get("/search", async (req, res) => {
     const { q } = req.query; // Get search query
