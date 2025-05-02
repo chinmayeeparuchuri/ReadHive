@@ -106,7 +106,7 @@ const EditReadingChallenge = () => {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${token}`, // ✅ ADD THIS
+            "Authorization": `Bearer ${token}`, 
           },
           body: JSON.stringify({ goal: parsedGoal }),
         }
@@ -120,8 +120,8 @@ const EditReadingChallenge = () => {
         throw new Error(`[DEBUG] Failed to update goal: ${response.statusText}`);
       }
   
-      setGoal(parsedGoal);                 // ✅ Update state
-      setEditedGoal(parsedGoal);          // Optional, depends on your use
+      setGoal(parsedGoal);                 
+      setEditedGoal(parsedGoal);         
       setConfirmationVisible(true);
       setGoalInput("");
       setGoalInputVisible(false);
