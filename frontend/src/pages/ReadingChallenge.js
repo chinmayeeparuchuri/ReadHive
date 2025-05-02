@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Navbar from "../components/Navbar"; // ✅ Navbar import
+import Navbar from "../components/Navbar"; //  Navbar import
 
 const ReadingChallenge = () => {
   const { userId, year } = useParams(); // Get userId and year from the URL
@@ -92,7 +92,7 @@ const ReadingChallenge = () => {
 
   return (
     <>
-      <Navbar /> {/* ✅ Navbar component */}
+      <Navbar /> {/*  Navbar component */}
       <div style={styles.container}>
         <div style={styles.header}>
           <h1>Welcome to Reading Challenge {year}</h1>
@@ -195,8 +195,10 @@ const styles = {
     height: "20px",
     backgroundColor: "#f0f0f0",
     borderRadius: "10px",
-    width: "100%",
+    width: "50%",
     overflow: "hidden",
+    marginLeft: "auto",   
+    marginRight: "auto",
   },
   progressBar: {
     height: "100%",
