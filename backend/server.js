@@ -12,7 +12,16 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+const allowedOrigins = [
+  "http://localhost:3000",                                // local dev
+  "https://read-hive-3e1b.vercel.app"                     // your Vercel frontend URL
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
