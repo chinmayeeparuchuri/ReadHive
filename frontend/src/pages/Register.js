@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
-// Cute Popup Component (built inside)
+
 const CutePopup = ({ message, onClose }) => {
   return (
     <div style={popupStyles.overlay}>
@@ -170,7 +170,7 @@ const styles = {
   },
 };
 
-// Cute Popup styles
+//  styles
 const popupStyles = {
   overlay: {
     position: "fixed",
