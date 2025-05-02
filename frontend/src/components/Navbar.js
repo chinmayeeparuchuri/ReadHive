@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
-  const userId = localStorage.getItem("userId"); // ✅ FIX: Get userId safely
+  const userId = localStorage.getItem("userId"); 
 
   const currentYear = new Date().getFullYear(); // Define currentYear
 
