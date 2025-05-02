@@ -56,6 +56,7 @@ const styles = {
     cursor: "pointer",
     fontSize: "16px",
     marginTop: "20px",
+    margin: "0 10px"
   },
   buttonContainer: {
     marginTop: "20px",
