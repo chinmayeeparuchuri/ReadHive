@@ -51,7 +51,7 @@ const Navbar = () => {
     <nav style={styles.navbar}>
       <div style={styles.logo}>
         <Link to={`/home/${userId}`} style={styles.brand}>
-          📚 ReadHive
+          🐝 ReadHive
         </Link>
       </div>
 
