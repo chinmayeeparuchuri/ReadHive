@@ -40,7 +40,7 @@ const BookDetailPage = () => {
     try {
       // Send the status update request to the backend
       console.log(`Sending POST request to update book status. URL: http://localhost:3000/api/readingChallenge/updateBookStatus`);
-      const res = await axios.post('http://localhost:3000/api/readingChallenge/updateBookStatus', {
+      const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/readingChallenge/updateBookStatus', {
         userId,
         bookId,
         status: listType.toLowerCase(), // Convert to lowercase ('reading', 'will read', 'read')
@@ -69,7 +69,7 @@ const BookDetailPage = () => {
     try {
       // Send the delete request to remove the book from the list
       console.log(`Sending DELETE request to remove book from the list. URL: http://localhost:3000/api/readingChallenge/removeBook`);
-      const res = await axios.delete('http://localhost:3000/api/readingChallenge/removeBook', {
+      const res = await axios.delete(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/readingChallenge/removeBook', {
         data: {
           userId,
           bookId,
