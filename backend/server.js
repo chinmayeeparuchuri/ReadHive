@@ -12,10 +12,8 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://read-hive-whug.vercel.app",
-];
+app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+
 
 app.use(cors({
   origin: allowedOrigins,
