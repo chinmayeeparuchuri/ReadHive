@@ -23,7 +23,7 @@ const EditReadingChallenge = () => {
   
       try {
         const response = await fetch(
-          `http://localhost:3000/api/readingChallenge/getChallenge/${userId}`,  // Only pass userId
+          `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/readingChallenge/getChallenge/${userId}`,  // Only pass userId
           {
             method: "GET",
             headers: {
@@ -59,7 +59,7 @@ const EditReadingChallenge = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/readingChallenge/setChallenge/${userId}/${currentYear}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/readingChallenge/setChallenge/${userId}/${currentYear}`,
         {
           method: "PUT",
           headers: {
@@ -101,7 +101,7 @@ const EditReadingChallenge = () => {
   
     try {
       const response = await fetch(
-        `http://localhost:3000/api/readingChallenge/setChallenge/${userId}/${currentYear}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/readingChallenge/setChallenge/${userId}/${currentYear}`,
         {
           method: "PUT",
           headers: {
